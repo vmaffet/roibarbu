@@ -1,0 +1,120 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="fill_parent"
+    android:layout_height="fill_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="fr.meteoverview.roibarbu.ContratsJoueur1"
+    android:background="#006699">
+
+    <fragment
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:name="fr.meteoverview.roibarbu.ScoresFragment"
+        android:id="@+id/FragmentScores"
+        tools:layout="@layout/scores_fragment"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/nomJoueur0"
+        android:id="@+id/JoueurCourant"
+        android:layout_alignParentTop="true"
+        android:background="#333333"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:height="100dp"
+        android:textColor="#FFFFFF"
+        android:textSize="35sp" />
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/gridLayout2">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/BoutonCoeurs"
+            android:id="@+id/BoutonSansCoeurs"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_margin="15dp"
+            android:height="150dp"
+            android:width="150dp"
+            android:onClick="bouCo"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/BoutonPlis"
+            android:id="@+id/BoutonSansPlis"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:width="150dp"
+            android:height="150dp"
+            android:layout_margin="15dp"
+            android:onClick="bouPl"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/BoutonDames"
+            android:id="@+id/BoutonSansDames"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_margin="15dp"
+            android:height="150dp"
+            android:width="150dp"
+            android:onClick="bouDa"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/BoutonRoiCoeur"
+            android:id="@+id/BoutonSansRoiCoeur"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:width="150dp"
+            android:height="150dp"
+            android:layout_margin="15dp"
+            android:onClick="bouRoCo"
+            android:textColor="#FFFFFF" />
+    </GridLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/REUSSITE"
+        android:id="@+id/BoutonReussite"
+        android:gravity="center_vertical|center_horizontal"
+        android:width="330dp"
+        android:height="330dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textSize="30sp"
+        android:onClick="reussite"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|center_horizontal"
+        android:width="330dp"
+        android:height="330dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textSize="30sp"
+        android:onClick="salade"
+        android:id="@+id/BoutonSalade"
+        android:text="@string/Salade" />
+
+</RelativeLayout>

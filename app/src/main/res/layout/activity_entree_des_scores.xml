@@ -1,0 +1,232 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="fr.meteoverview.roibarbu.EntreeDesScores"
+    android:background="#006699"
+    android:padding="30dp">
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/gridLayout"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/AfficheScoreJ1"
+            android:id="@+id/ScoreJ1"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_rowSpan="2"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="0dp"
+            android:padding="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/zerozero"
+            android:id="@+id/ScoreEnPlusJ1"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_rowSpan="2"
+            android:layout_gravity="center"
+            android:layout_margin="0dp"
+            android:padding="20dp" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Plus5"
+            android:id="@+id/BoutonJ1plus"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:layout_margin="0dp"
+            android:width="60dp"
+            android:onClick="plus1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/AfficheScoreJ2"
+            android:id="@+id/ScoreJ2"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:layout_rowSpan="2"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="0dp"
+            android:padding="20dp" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Moins5"
+            android:id="@+id/BoutonJ1moins"
+            android:layout_row="1"
+            android:layout_column="2"
+            android:layout_margin="0dp"
+            android:width="60dp"
+            android:onClick="moins1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/zerozero"
+            android:id="@+id/ScoreEnPlusJ2"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:layout_rowSpan="2"
+            android:layout_gravity="center"
+            android:layout_margin="0dp"
+            android:padding="20dp" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/BoutonJ2plus"
+            android:layout_row="2"
+            android:layout_column="2"
+            android:layout_margin="0dp"
+            android:text="@string/Plus5"
+            android:width="60dp"
+            android:onClick="plus2"/>
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Moins5"
+            android:id="@+id/BoutonJ2moins"
+            android:layout_row="3"
+            android:layout_column="2"
+            android:layout_margin="0dp"
+            android:width="60dp"
+            android:onClick="moins2"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/AfficheScoreJ3"
+            android:id="@+id/ScoreJ3"
+            android:layout_row="4"
+            android:layout_column="0"
+            android:layout_rowSpan="2"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="0dp"
+            android:padding="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/zerozero"
+            android:id="@+id/ScoreEnPlusJ3"
+            android:layout_row="4"
+            android:layout_column="1"
+            android:layout_rowSpan="2"
+            android:layout_gravity="center"
+            android:layout_margin="0dp"
+            android:padding="20dp" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Plus5"
+            android:id="@+id/BoutonJ3plus"
+            android:layout_row="4"
+            android:layout_column="2"
+            android:layout_margin="0dp"
+            android:width="60dp"
+            android:onClick="plus3"/>
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Moins5"
+            android:id="@+id/BoutonJ3moins"
+            android:layout_row="5"
+            android:layout_column="2"
+            android:layout_margin="0dp"
+            android:width="60dp"
+            android:onClick="moins3"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/AfficheScoreJ4"
+            android:id="@+id/ScoreJ4"
+            android:layout_row="6"
+            android:layout_column="0"
+            android:layout_rowSpan="2"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="0dp"
+            android:padding="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/zerozero"
+            android:id="@+id/ScoreEnPlusJ4"
+            android:layout_row="6"
+            android:layout_column="1"
+            android:layout_rowSpan="2"
+            android:layout_gravity="center"
+            android:layout_margin="0dp"
+            android:padding="20dp" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Plus5"
+            android:id="@+id/BoutonJ4plus"
+            android:layout_row="6"
+            android:layout_column="2"
+            android:layout_margin="0dp"
+            android:width="60dp"
+            android:onClick="plus4"/>
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Moins5"
+            android:id="@+id/BoutonJ4moins"
+            android:layout_row="7"
+            android:layout_column="2"
+            android:layout_margin="0dp"
+            android:width="60dp"
+            android:onClick="moins4"/>
+
+    </GridLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/BoutonFinir"
+        android:id="@+id/boutonFinir"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="45dp"
+        android:width="125dp"
+        android:height="55dp"
+        android:onClick="finir"/>
+
+</RelativeLayout>

@@ -1,0 +1,639 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent">
+
+    <RelativeLayout  android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        tools:context="fr.meteoverview.roibarbu.ScoresSalade"
+        android:background="#006699">
+
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/gridLayout3"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/Coeurs"
+                android:id="@+id/ColonneCoeurs"
+                android:layout_row="0"
+                android:layout_column="2"
+                android:layout_columnSpan="2"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/Dames"
+                android:id="@+id/ColonneDames"
+                android:layout_row="0"
+                android:layout_column="4"
+                android:layout_columnSpan="2"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/Roi"
+                android:id="@+id/ColonneRoi"
+                android:layout_row="0"
+                android:layout_column="6"
+                android:layout_columnSpan="2"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/nomJoueur0"
+                android:id="@+id/AfficheJ1"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:layout_columnSpan="8"
+                android:layout_marginTop="45dp" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Plus5"
+                android:id="@+id/PlisPlusJ1"
+                android:layout_row="2"
+                android:layout_column="1"
+                android:onClick="PlisPlusJ1"/>
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Moins5"
+                android:id="@+id/PlisMoinsJ1"
+                android:layout_row="3"
+                android:layout_column="1"
+                android:onClick="PlisMoinsJ1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/Plis"
+                android:id="@+id/ColonnePlis"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:layout_columnSpan="2"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/zero"
+                android:id="@+id/nbPlisJ1"
+                android:layout_row="2"
+                android:layout_column="0"
+                android:layout_rowSpan="2"
+                android:layout_gravity="center"
+                android:layout_margin="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/zero"
+                android:id="@+id/nbCoeursJ1"
+                android:layout_row="2"
+                android:layout_column="2"
+                android:layout_rowSpan="2"
+                android:layout_gravity="center"
+                android:layout_margin="15dp" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Plus5"
+                android:id="@+id/CoeursPlusJ1"
+                android:layout_row="2"
+                android:layout_column="3"
+                android:onClick="CoeursPlusJ1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/zero"
+                android:id="@+id/nbDamesJ1"
+                android:layout_row="2"
+                android:layout_column="4"
+                android:layout_rowSpan="2"
+                android:layout_gravity="center"
+                android:layout_margin="15dp" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Plus5"
+                android:id="@+id/DamesPlusJ1"
+                android:layout_row="2"
+                android:layout_column="5"
+                android:onClick="DamesPlusJ1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/zero"
+                android:id="@+id/nbRoiJ1"
+                android:layout_row="2"
+                android:layout_column="6"
+                android:layout_rowSpan="2"
+                android:layout_gravity="center"
+                android:layout_margin="15dp" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Plus5"
+                android:id="@+id/RoiPlusJ1"
+                android:layout_row="2"
+                android:layout_column="7"
+                android:onClick="RoiPlusJ1"/>
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Moins5"
+                android:id="@+id/CoeursMoinsJ1"
+                android:layout_row="3"
+                android:layout_column="3"
+                android:onClick="CoeursMoinsJ1"/>
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Moins5"
+                android:id="@+id/DamesMoinsJ1"
+                android:layout_row="3"
+                android:layout_column="5"
+                android:onClick="DamesMoinsJ1"/>
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Moins5"
+                android:id="@+id/RoiMoinsJ1"
+                android:layout_row="3"
+                android:layout_column="7"
+                android:onClick="RoiMoinsJ1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/zero"
+                android:id="@+id/nbPlisJ2"
+                android:layout_row="5"
+                android:layout_column="0"
+                android:layout_rowSpan="2"
+                android:layout_margin="15dp"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/nomJoueur1"
+                android:id="@+id/AfficheJ2"
+                android:layout_row="4"
+                android:layout_column="0"
+                android:layout_columnSpan="8"
+                android:layout_marginTop="45dp" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Plus5"
+                android:id="@+id/PlisPlusJ2"
+                android:layout_row="5"
+                android:layout_column="1"
+                android:onClick="PlisPlusJ2"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/nomJoueur2"
+                android:id="@+id/AfficheJ3"
+                android:layout_row="7"
+                android:layout_column="0"
+                android:layout_columnSpan="8"
+                android:layout_marginTop="45dp" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Moins5"
+                android:id="@+id/PlisMoinsJ2"
+                android:layout_row="6"
+                android:layout_column="1"
+                android:onClick="PlisMoinsJ2"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/zero"
+                android:id="@+id/nbCoeursJ2"
+                android:layout_row="5"
+                android:layout_column="2"
+                android:layout_rowSpan="2"
+                android:layout_margin="15dp"
+                android:layout_gravity="center" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Plus5"
+                android:id="@+id/CoeursPlusJ2"
+                android:layout_row="5"
+                android:layout_column="3"
+                android:onClick="CoeursPlusJ2"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/zero"
+                android:id="@+id/nbDamesJ2"
+                android:layout_row="5"
+                android:layout_column="4"
+                android:layout_rowSpan="2"
+                android:layout_margin="15dp"
+                android:layout_gravity="center" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Plus5"
+                android:id="@+id/DamesPlusJ2"
+                android:layout_row="5"
+                android:layout_column="5"
+                android:onClick="DamesPlusJ2"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/zero"
+                android:id="@+id/nbRoiJ2"
+                android:layout_row="5"
+                android:layout_column="6"
+                android:layout_rowSpan="2"
+                android:layout_margin="15dp"
+                android:layout_gravity="center" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Plus5"
+                android:id="@+id/RoiPlusJ2"
+                android:layout_row="5"
+                android:layout_column="7"
+                android:onClick="RoiPlusJ2"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/zero"
+                android:id="@+id/nbPlisJ3"
+                android:layout_row="8"
+                android:layout_column="0"
+                android:layout_rowSpan="2"
+                android:layout_margin="15dp"
+                android:layout_gravity="center" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Plus5"
+                android:id="@+id/PlisPlusJ3"
+                android:layout_row="8"
+                android:layout_column="1"
+                android:onClick="PlisPlusJ3"/>
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Moins5"
+                android:id="@+id/CoeursMoinsJ2"
+                android:layout_row="6"
+                android:layout_column="3"
+                android:onClick="CoeursMoinsJ2"/>
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Moins5"
+                android:id="@+id/DamesMoinsJ2"
+                android:layout_row="6"
+                android:layout_column="5"
+                android:onClick="DamesMoinsJ2"/>
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Moins5"
+                android:id="@+id/RoiMoinsJ2"
+                android:layout_row="6"
+                android:layout_column="7"
+                android:onClick="RoiMoinsJ2"/>
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Moins5"
+                android:id="@+id/CoeursMoinsJ3"
+                android:layout_row="9"
+                android:layout_column="3"
+                android:onClick="CoeursMoinsJ3"/>
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Moins5"
+                android:id="@+id/DamesMoinsJ3"
+                android:layout_row="9"
+                android:layout_column="5"
+                android:onClick="DamesMoinsJ3"/>
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Moins5"
+                android:id="@+id/RoiMoinsJ3"
+                android:layout_row="9"
+                android:layout_column="7"
+                android:onClick="RoiMoinsJ3"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/zero"
+                android:id="@+id/nbPlisJ4"
+                android:layout_row="11"
+                android:layout_column="0"
+                android:layout_rowSpan="2"
+                android:layout_margin="15dp"
+                android:layout_gravity="center" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Plus5"
+                android:id="@+id/PlisPlusJ4"
+                android:layout_row="11"
+                android:layout_column="1"
+                android:onClick="PlisPlusJ4"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/nomJoueur3"
+                android:id="@+id/AfficheJ4"
+                android:layout_row="10"
+                android:layout_column="0"
+                android:layout_columnSpan="8"
+                android:layout_marginTop="45dp" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Moins5"
+                android:id="@+id/PlisMoinsJ3"
+                android:layout_row="9"
+                android:layout_column="1"
+                android:onClick="PlisMoinsJ3"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/zero"
+                android:id="@+id/nbCoeursJ3"
+                android:layout_row="8"
+                android:layout_column="2"
+                android:layout_rowSpan="2"
+                android:layout_margin="15dp"
+                android:layout_gravity="center" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Plus5"
+                android:id="@+id/CoeursPlusJ3"
+                android:layout_row="8"
+                android:layout_column="3"
+                android:onClick="CoeursPlusJ3"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/zero"
+                android:id="@+id/nbDamesJ3"
+                android:layout_row="8"
+                android:layout_column="4"
+                android:layout_rowSpan="2"
+                android:layout_margin="15dp"
+                android:layout_gravity="center" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Plus5"
+                android:id="@+id/DamesPlusJ3"
+                android:layout_row="8"
+                android:layout_column="5"
+                android:onClick="DamesPlusJ3"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/zero"
+                android:id="@+id/nbRoiJ3"
+                android:layout_row="8"
+                android:layout_column="6"
+                android:layout_rowSpan="2"
+                android:layout_margin="15dp"
+                android:layout_gravity="center" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Plus5"
+                android:id="@+id/RoiPlusJ3"
+                android:layout_row="8"
+                android:layout_column="7"
+                android:onClick="RoiPlusJ3"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/BoutonFinir"
+                android:id="@+id/fin"
+                android:layout_row="13"
+                android:layout_column="0"
+                android:layout_columnSpan="8"
+                android:layout_gravity="center"
+                android:width="100dp"
+                android:onClick="fin"
+                android:layout_marginTop="45dp" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Moins5"
+                android:id="@+id/PlisMoinsJ4"
+                android:layout_row="12"
+                android:layout_column="1"
+                android:onClick="PlisMoinsJ4"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/zero"
+                android:id="@+id/nbCoeursJ4"
+                android:layout_row="11"
+                android:layout_column="2"
+                android:layout_rowSpan="2"
+                android:layout_margin="15dp"
+                android:layout_gravity="center" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Plus5"
+                android:id="@+id/CoeursPlusJ4"
+                android:layout_row="11"
+                android:layout_column="3"
+                android:onClick="CoeursPlusJ4"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/zero"
+                android:id="@+id/nbDamesJ4"
+                android:layout_row="11"
+                android:layout_column="4"
+                android:layout_rowSpan="2"
+                android:layout_margin="15dp"
+                android:layout_gravity="center" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Plus5"
+                android:id="@+id/DamesPlusJ4"
+                android:layout_row="11"
+                android:layout_column="5"
+                android:onClick="DamesPlusJ4"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/zero"
+                android:id="@+id/nbRoiJ4"
+                android:layout_row="11"
+                android:layout_column="6"
+                android:layout_rowSpan="2"
+                android:layout_margin="15dp"
+                android:layout_gravity="center" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Plus5"
+                android:id="@+id/RoiPlusJ4"
+                android:layout_row="11"
+                android:layout_column="7"
+                android:onClick="RoiPlusJ4"/>
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Moins5"
+                android:id="@+id/CoeursMoinsJ4"
+                android:layout_row="12"
+                android:layout_column="3"
+                android:onClick="CoeursMoinsJ4"/>
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Moins5"
+                android:id="@+id/DamesMoinsJ4"
+                android:layout_row="12"
+                android:layout_column="5"
+                android:onClick="DamesMoinsJ4"/>
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Moins5"
+                android:id="@+id/RoiMoinsJ4"
+                android:layout_row="12"
+                android:layout_column="7"
+                android:onClick="RoiMoinsJ4"/>
+
+        </GridLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

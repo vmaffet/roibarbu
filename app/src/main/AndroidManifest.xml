@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="fr.meteoverview.roibarbu" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".Demarrage"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".EntreeDesNoms"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_entree_des_noms" >
+        </activity>
+        <activity
+            android:name=".AffichageOrdre"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_affichage_ordre" >
+        </activity>
+        <activity
+            android:name=".ContratsJoueur1"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_contrats_joueur1" >
+        </activity>
+        <activity
+            android:name=".EntreeDesScores"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_entree_des_scores" >
+        </activity>
+        <activity
+            android:name=".ScoresReussite"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_scores_reussite" >
+        </activity>
+        <activity
+            android:name=".ScoresSalade"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_scores_salade" >
+        </activity>
+        <activity
+            android:name=".Fin"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_fin" >
+        </activity>
+    </application>
+
+</manifest>
